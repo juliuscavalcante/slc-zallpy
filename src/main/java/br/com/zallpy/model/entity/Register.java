@@ -1,4 +1,6 @@
-package br.com.zallpy.model.eneity;
+package br.com.zallpy.model.entity;
+
+import br.com.zallpy.model.dto.RegisterDTO;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlElement;
@@ -55,6 +57,20 @@ public class Register implements Serializable {
         this.cnpjNLiqdantCredt = cnpjNLiqdantCredt;
         this.nomeCliCredtd = nomeCliCredtd;
         this.tpTranscSLC = tpTranscSLC;
+    }
+
+    public Register(RegisterDTO registerDTO) {
+        this.id = registerDTO.getId();
+        this.identLinhaBilat = registerDTO.getIdentLinhaBilat();
+        this.tpDebCred = registerDTO.getTpDebCred();
+        this.ispPbifCredtd = registerDTO.getIspPbifCredtd();
+        this.ispPbifDebtd = registerDTO.getIspPbifDebtd();
+        this.vlrLanc = registerDTO.getVlrLanc();
+        this.cnpjNLiqdantDebtd = registerDTO.getCnpjNLiqdantDebtd();
+        this.nomeCliDebtd= registerDTO.getNomeCliDebtd();
+        this.cnpjNLiqdantCredt = registerDTO.getCnpjNLiqdantCredt();
+        this.nomeCliCredtd = registerDTO.getNomeCliCredtd();
+        this.tpTranscSLC = registerDTO.getTpTranscSLC();
     }
 
     public Long getId() {

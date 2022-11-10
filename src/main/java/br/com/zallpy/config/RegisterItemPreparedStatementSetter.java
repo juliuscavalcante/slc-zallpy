@@ -1,6 +1,6 @@
 package br.com.zallpy.config;
 
-import br.com.zallpy.model.eneity.Register;
+import br.com.zallpy.model.entity.Register;
 import org.springframework.batch.item.database.ItemPreparedStatementSetter;
 
 import java.sql.PreparedStatement;

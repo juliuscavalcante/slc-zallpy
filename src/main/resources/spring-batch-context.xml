@@ -21,7 +21,7 @@
             <bean class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
                 <property name="classesToBeBound">
                     <list>
-                        <value>br.com.zallpy.model.eneity.Register</value>
+                        <value>br.com.zallpy.model.entity.Register</value>
                     </list>
                 </property>
             </bean>
